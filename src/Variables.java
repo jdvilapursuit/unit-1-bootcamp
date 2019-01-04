@@ -34,16 +34,17 @@ public class Variables {
   public static greatestCommonFactor(int num1, int num2) {
 
 
-    int gcf = 1;
-    int k = 2;
+    int firstCommonFactor = 1;
+    int secondCommonFactor = 2;
 
-    while (k <= num1 && k <= num2) {
-      if (num1 % k == 0 && num2 % k == 0) {
+
+    while (secondCommonFactor <= num1 && secondCommonFactor <= num2) {
+      if (num1 % secondCommonFactor == 0 && num2 % secondCommonFactor == 0) {
       }
-      gcd = k;
-      k++;
+      firstCommonFactor = secondCommonFactor;
+      secondCommonFactor++;
     }
-    System.out.println("The Greatest Common Factor for " + num1 + " and " + num2 + " is " + gcf);
+    System.out.println("The Greatest Common Factor for " + num1 + " and " + num2 + " is " + firstCommonFactor);
   }
 
 
